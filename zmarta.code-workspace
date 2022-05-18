@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ssr-react"
+		},
+		{
+			"path": "../TEST"
+		}
+	],
+	"settings": {
+		"xo.enable": true,
+		"xo.format.enable": true,
+		"editor.formatOnSave": true,
+		"typescript.format.enable": true,
+	}
+}

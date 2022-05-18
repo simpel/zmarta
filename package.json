@@ -1,0 +1,14 @@
+{
+  "name": "js-base",
+  "version": "1.0.0",
+  "description": "Zmarta code test",
+  "author": "Joel Sandén",
+  "license": "ISC",
+  "scripts": {
+    "start": "concurrently 'cd ./Server && yarn server' 'cd ./Client && yarn dev'"
+  },
+  "dependencies": {
+    "concurrently": "^7.2.0",
+    "xo": "^0.49.0"
+  }
+}
