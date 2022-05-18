@@ -1,14 +1,22 @@
 {
-  "name": "js-base",
-  "version": "1.0.0",
-  "description": "Zmarta code test",
-  "author": "Joel Sandén",
-  "license": "ISC",
+  "name": "zmarta",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "start": "concurrently 'cd ./Server && yarn server' 'cd ./Client && yarn dev'"
+    "build": "turbo run build",
+    "start": "turbo run dev --parallel",
+    "lint": "turbo run lint"
   },
-  "dependencies": {
-    "concurrently": "^7.2.0",
-    "xo": "^0.49.0"
-  }
+  "devDependencies": {
+    "turbo": "^1.2.9"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.1.0"
 }

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'SharpSansNo1-Book';
+    src: url('/fonts/SharpSansNo1-Book.eot');
+    src: url('/fonts/SharpSansNo1-Book.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/SharpSansNo1-Book.woff2') format('woff2'),
+        url('/fonts/SharpSansNo1-Book.woff') format('woff'),
+        url('/fonts/SharpSansNo1-Book.ttf') format('truetype'),
+        url('/fonts/SharpSansNo1-Book.svg#SharpSansNo1-Book') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}

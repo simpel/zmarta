@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-base",
+  "version": "0.0.3",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-xo": "^0.41.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint": "^8.15.0",
+    "prettier": "^2.6.2",
+    "webpack": "^5.72.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
