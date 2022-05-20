@@ -1,88 +1,91 @@
 module.exports = {
-	"rules": {
-		"import/extensions": [
-			"off"
+	rules: {
+		'new-cap': 'WARN',
+		'import/extensions': [
+			'off',
 		],
-		"unicorn/filename-case": [
-			"WARN",
+		'unicorn/filename-case': [
+			'WARN',
 			{
-				"case": "pascalCase",
-				"ignore": [
-					"\\.config\\.ts$",
-					"^use.*.ts$",
-					"\\.config\\.js$"
-				]
-			}
+				case: 'pascalCase',
+				ignore: [
+					'\\.config\\.ts$',
+					'^use.*.ts$',
+					'\\.config\\.js$',
+				],
+			},
 		],
-		"@typescript-eslint/naming-convention": [
-			"WARN",
+		'@typescript-eslint/naming-convention': [
+			'WARN',
 			{
-				"selector": "variableLike",
-				"format": [
-					"camelCase",
-					"PascalCase"
-				]
+				selector: 'variableLike',
+				format: [
+					'camelCase',
+					'PascalCase',
+				],
 			},
 			{
-				"selector": "variable",
-				"format": [
-					"PascalCase"
+				selector: 'variable',
+				format: [
+					'PascalCase',
+					'camelCase',
 				],
-				"modifiers": [
-					"exported"
-				]
+				modifiers: [
+					'exported',
+				],
 			},
 			{
-				"selector": "variable",
-				"format": [
-					"camelCase"
+				selector: 'variable',
+				format: [
+					'camelCase',
 				],
-				"filter": {
-					"regex": "^create|^use|^get|^post",
-					"match": true
-				}
+				filter: {
+					regex: '^create|^use|^get|^post',
+					match: true,
+				},
 			},
 			{
-				"selector": "function",
-				"format": [
-					"PascalCase"
-				]
+				selector: 'function',
+				format: [
+					'PascalCase',
+				],
 			},
 			{
-				"selector": "interface",
-				"format": [
-					"PascalCase"
+				selector: 'interface',
+				format: [
+					'PascalCase',
 				],
-				"prefix": [
-					"I"
-				]
+				prefix: [
+					'I',
+				],
 			},
 			{
-				"selector": "typeAlias",
-				"format": [
-					"PascalCase"
+				selector: 'typeAlias',
+				format: [
+					'PascalCase',
 				],
-				"prefix": [
-					"T"
-				]
+				prefix: [
+					'T',
+				],
 			},
 			{
-				"selector": "variable",
-				"types": [
-					"boolean"
+				selector: 'variable',
+				types: [
+					'boolean',
 				],
-				"format": [
-					"PascalCase"
+				format: [
+					'PascalCase',
 				],
-				"prefix": [
-					"is",
-					"should",
-					"has",
-					"can",
-					"did",
-					"will"
-				]
-			}
-		]
-	}
-}
+				prefix: [
+					'is',
+					'should',
+					'has',
+					'can',
+					'did',
+					'will',
+				],
+			},
+		],
+	},
+};
+

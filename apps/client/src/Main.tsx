@@ -13,7 +13,10 @@ if (element) {
 			<BrowserRouter>
 				<Routes>
 					<Route path="*" element={<Calculator />} />
-					<Route path="erbjudanden/a/:amount/y/:repaymentYears" element={<Result />} />
+					<Route
+						path="erbjudanden/a/:amount/y/:repaymentYears"
+						element={<Result />}
+					/>
 				</Routes>
 			</BrowserRouter>
 		</React.StrictMode>,

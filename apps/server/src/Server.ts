@@ -1,10 +1,10 @@
 import express, {Application} from 'express';
 import cors from 'cors';
-import { TBank } from './Banks/TBank';
-import banks from './Banks/Banks';
-import CheckApp from './CheckApp/CheckApp';
-import { TCheckApp } from './CheckApp/TCheckApp';
+import {TBank} from './Banks/TBank';
+
 import Banks from './Banks/Banks';
+import {filter} from './Utils/Utils';
+import {TFilterParameters} from './Utils/TFilterParameters';
 
 /**
  * Settings
@@ -22,15 +22,16 @@ App.use(
 App.use(express.json());
 
 App.post('/submit', async (request, response) => {
-	const availableBanks = CheckApp({ ...request.body } as TCheckApp);	
-	console.log(availableBanks, "ava");
-	
+	const availableBanks = filter({
+		...request.body,
+	} as TFilterParameters);
+	console.log(availableBanks, 'ava');
+
 	response.json({
 		totalNumOfBanks: Banks.length,
 		availableBanks,
 	});
 });
-
 
 App.listen(port, () => {
 	console.log(`🧟 It's alive! http://localhost:${port}`);
